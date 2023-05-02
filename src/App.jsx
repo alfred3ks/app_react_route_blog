@@ -4,8 +4,7 @@ import Inicio from "./components/Inicio";
 import Blog from "./components/Blog";
 import AcercaDe from "./components/AcercaDe";
 import styled from "styled-components";
-
-export const Container = styled.div``;
+import Post from "./components/Post";
 
 const App = () => {
   return (
@@ -16,6 +15,7 @@ const App = () => {
           <Routes>
             <Route path={"/"} element={<Inicio />} />
             <Route path={"/blog"} element={<Blog />} />
+            <Route path={"/post/:id"} element={<Post />} />
             <Route path={"/acerca-de"} element={<AcercaDe />} />
           </Routes>
         </Main>
