@@ -7,7 +7,7 @@ const Header = () => {
     <ContenedorHeader>
       <Titulo>Mi blog personal!</Titulo>
       <Menu>
-        <NavLink to={"/"}>Inicio</NavLink>
+        <NavLink to={"/inicio"}>Inicio</NavLink>
         <NavLink to={"/blog"}>Blog</NavLink>
         <NavLink to={"acerca-de"}>Acerca de</NavLink>
       </Menu>
