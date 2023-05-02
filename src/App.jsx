@@ -18,6 +18,7 @@ const App = () => {
             <Route path={"/app_react_route_blog/blog"} element={<Blog />} />
             <Route path={"/app_react_route_blog/post/:id"} element={<Post />} />
             <Route path={"/*"} element={<Error404 />} />
+            <Route path={"app_react_route_blog/*"} element={<Error404 />} />
             <Route
               path={"/app_react_route_blog/acerca-de"}
               element={<AcercaDe />}
