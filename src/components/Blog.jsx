@@ -9,7 +9,9 @@ const Blog = () => {
         {posts.map((post) => {
           return (
             <li key={post.id}>
-              <NavLink to={`/post/${post.id}`}>{post.titulo}</NavLink>
+              <NavLink to={`/app_react_route_blog/post/${post.id}`}>
+                {post.titulo}
+              </NavLink>
             </li>
           );
         })}

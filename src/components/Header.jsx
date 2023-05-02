@@ -7,9 +7,9 @@ const Header = () => {
     <ContenedorHeader>
       <Titulo>Mi blog personal!</Titulo>
       <Menu>
-        <NavLink to={"/"}>Inicio</NavLink>
-        <NavLink to={"/blog"}>Blog</NavLink>
-        <NavLink to={"/acerca-de"}>Acerca de</NavLink>
+        <NavLink to={"app_react_route_blog/"}>Inicio</NavLink>
+        <NavLink to={"app_react_route_blog/blog"}>Blog</NavLink>
+        <NavLink to={"app_react_route_blog/acerca-de"}>Acerca de</NavLink>
       </Menu>
     </ContenedorHeader>
   );

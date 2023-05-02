@@ -14,11 +14,14 @@ const App = () => {
         <Header />
         <Main>
           <Routes>
-            <Route path={"/"} element={<Inicio />} />
-            <Route path={"/blog"} element={<Blog />} />
-            <Route path={"/post/:id"} element={<Post />} />
+            <Route path={"/app_react_route_blog/"} element={<Inicio />} />
+            <Route path={"/app_react_route_blog/blog"} element={<Blog />} />
+            <Route path={"/app_react_route_blog/post/:id"} element={<Post />} />
             <Route path={"/*"} element={<Error404 />} />
-            <Route path={"/acerca-de"} element={<AcercaDe />} />
+            <Route
+              path={"/app_react_route_blog/acerca-de"}
+              element={<AcercaDe />}
+            />
           </Routes>
         </Main>
       </ContenedorPrincipal>
