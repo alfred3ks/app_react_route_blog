@@ -1,5 +1,6 @@
 import posts from "../data/post";
 import { useParams, Navigate } from "react-router-dom";
+import Error404 from "./Error404";
 
 const Post = () => {
   // Obtenemos el parametro id de la ruta:
@@ -17,7 +18,8 @@ const Post = () => {
           <p>{posts[id - 1].texto}</p>
         </>
       ) : (
-        <Navigate replace to={"/"} />
+        // <Navigate replace to={"/"} />
+        <Error404 />
       )}
     </>
   );
