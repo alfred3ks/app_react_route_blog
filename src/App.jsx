@@ -14,10 +14,10 @@ const App = () => {
         <Header />
         <Main>
           <Routes>
-            <Route path={"/app_react_route_blog/inicio"} element={<Inicio />} />
+            <Route path={"/"} element={<Inicio />} />
             <Route path={"/blog"} element={<Blog />} />
             <Route path={"/post/:id"} element={<Post />} />
-            <Route path={"*"} element={<Error404 />} />
+            <Route path={"/*"} element={<Error404 />} />
             <Route path={"/acerca-de"} element={<AcercaDe />} />
           </Routes>
         </Main>
